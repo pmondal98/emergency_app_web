@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EMERGENCY-AMBULANCE</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link rel="shortcut icon" href="images/ambulance.png" />	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+		<!-----header-section------>
+		<div class="header-section">
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="top-header">
+						<div class="logo">
+							<a href="#"><img src="images/ambulance.png" title="logo" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#top" class="scroll">About</a></li>
+								<li class="page-scroll"><a href="#fea" class="scroll">FEATURES</a></li>
+								<li class="page-scroll"><a href="#gallery" class="scroll">Gallery</a></li>
+								<li class="page-scroll"><a href="#about" class="scroll">TEAM </a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+							  <h1>Introducing</h1>
+							  <h1><span>Emergency App.</span></h1>
+			          		<h2>Made to save live anywhere</h2>
+			          		<div class="slide-text">
+			          			<ul>
+			          				<li><span> </span>For accident victims </li>
+			          				<li><span> </span>For senior citizen people </li>
+			          				<li><span> </span>For pregnant women </li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+								<a href="./images/Emergency.apk" target="_blank" download><label> </label>Download</a>
+			          			<a class="view page-scroll scroll" href="#gallery"><label> </label>View Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+							  <h1>Introducing</span></h1>
+							  <h1><span>Ambulance Service app.</span></h1>
+			          		<h2>Made to save live anywhere</h2>
+			          		<div class="slide-text">
+			          			<ul>
+									<li><span> </span>For accident victims </li>
+									<li><span> </span>For senior citizen people </li>
+									<li><span> </span>For pregnant women </li>
+			          			</ul>
+			          		</div>
+			          		<div class="clearfix"> </div>
+			          		<div class="big-btns">
+			          			<a href="./images/Emergency.apk" target="_blank" download><label> </label>Download</a>
+			          			<a class="view page-scroll scroll" href="#gallery"><label> </label>View Gallery</a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			    <!-----divice----->
+			    	<div class="divice-demo">
+			    		<img src="images/divice-in-hand.png" title="demo" />
+			    	</div>
+			    <!---//divice----->
+			<!----- //End-slider---->
+			</div>
+			<!-----//header-section----->
+			<!----features----->
+			<div id="fea" class="features">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>AMAZING FEATURES<span class="second"> </span></h3>
+						<p>The primary focus of an Ambulance Service Team is two-fold: The first is to reach people in emergency 
+							situations as quickly as possible and administer life-saving first-aid on the spot. The second is to transport 
+							the sick or injured patient as quickly as possible to the appropriate healthcare facility for further care.</p>
+					</div>
+					<!----features-grids----->
+					<div class="features-grids">
+						<div class="col-md-4 features-grid">
+							<!-- <div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<span class="f-icon0"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div> -->
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<i class="fas fa-ambulance" style="font-size:38px;"></i>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Immediate Ambulance Service</h4>
+									<p>As soon as we get a notification of an emergency, our app connects the ambulance and hospital for the victim.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon">
+									<i class="fas fa-map-marked-alt" style="font-size:38px;"></i>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Live tracking of the ambulance</h4>
+									<p>The victim can also locate the live location of the ambulance, once the ambulance is confirmed.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="big-divice">
+								<img src="images/divice.png" title="features-demo" />
+							</div>
+						</div><!---end-features-grid---->
+						<div class="col-md-4 features-grid">
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<i class="fas fa-user-injured" style="font-size:38px;"></i>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Selection of patient type</h4>
+									<p>There are multiple options where patients can choose his/her health condition and also the type of emergency.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<i class="fas fa-window-close" style="font-size:38px;"></i>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Cancellation of Ambulance</h4>
+									<p>Booked ambulance can be cancelled by giving an authenticate reason.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<!-- <div class="features-grid-info">
+								<div class="col-md-2 features-icon1">
+									<span class="f-icon5"> </span>
+								</div>
+								<div class="col-md-10 features-info">
+									<h4>Accusan timar</h4>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div> -->
+							
+						</div><!---end-features-grid---->
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<!----//features-grids----->
+					<!----//features----->
+					<!----screen-shot-gallery---->
+					<div id="gallery" class="screen-shot-gallery">
+						<div class="container">
+							<div class="section-head text-center">
+								<h3><span class="frist"> </span>SCREENSHOTS GALLERY<span class="second"> </span></h3>
+								<p>Emergency medical services (EMS), also known as ambulance services or paramedic services, are emergency services which treat 
+									illnesses and injuries that require an urgent medical response, providing out-of-hospital treatment and transport to   
+									definitive care.</p>
+							</div>
+						</div>
+						<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 3,
+							        lazyLoad : true,
+							        autoPlay : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen1.png" alt="screen-name1">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen2.png" alt="screen-name2">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen3.png" alt="screen-name3">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen4.png" alt="screen-name4">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen5.png" alt="screen-name5">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen6.png" alt="screen-name6">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen7.png" alt="screen-name7">
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="images/screen8.png" alt="screen-name8">
+					                </div>
+				              </div>
+						</div>
+						<!--//sreen-gallery-cursual---->
+					</div>
+				</div>
+				<!--//screen-shot-gallery---->
+				<!----team---->
+				<div id="about" class="team">
+					<div class="container">
+						<div class="section-head text-center">
+							<h3><span class="frist"> </span>PEOPLE BEHIND THE APP<span class="second"> </span></h3>
+							<p>“Coming together is a beginning. Keeping together is progress. Working together is success.” -Henry Ford <br> 
+							 The best part about our team is all members are very serious about their own responsibility. So it was very easy to devide and 
+							  complete the whole work in stipulated amount of time. 
+							 </p>
+						</div>
+					</div>
+					<!----team-members---->
+					<div class="team-members">
+						<div class="container">
+							<div class="col-md-4 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member1.jpeg" title="name" />
+									<h5><a href="https://pmondal98.netlify.com">Prabhas Mondal</a></h5>
+									<span>Lead Developer and Designer</span>
+									<label class="team-member-caption text-center">
+										<p>Worked as a Developer and Designer.Worked as a lead developer for this app. 
+											Follow his portfolio <a href="https://pmondal98.netlify.com">https://pmondal98.netlify.com</a></p>
+										<ul>											
+											<i class="fab fa-facebook-square" style="font-size:48px;"></i>
+											<i class="fab fa-instagram-square" style="font-size:48px;"></i>																						
+											<div class="clearfix"> </div>
+										</ul>
+									</label>
+								</div>
+							</div><!--- end-team-member --->
+							<div class="col-md-4 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member2.jpg" title="name" />
+									<h5><a href="#">Debdip Dey</a></h5>
+									<span>Lead Designer and Developer</span>
+									<label class="team-member-caption text-center">
+										<p>Worked as a Developer and Designer.Worked mainly as a design head for this app.</p>
+										<ul>
+											<i class="fab fa-facebook-square" style="font-size:48px;"></i>
+											<i class="fab fa-instagram-square" style="font-size:48px;"></i>
+											<div class="clearfix"> </div>
+										</ul>
+									</label>
+								</div>
+							</div><!--- end-team-member --->							
+							<div class="col-md-4 team-member">
+								<div class="team-member-info">
+									<img class="member-pic" src="images/team-member3.jpg" title="name" />
+									<h5><a href="#">Subhendu Kundu</a></h5>
+									<span>Developer and Designer</span>
+									<label class="team-member-caption text-center">
+										<p>Worked as a Developer and Designer. Mainly maintained the Marketting Head for this app.</p>
+										<ul>
+											<i class="fab fa-facebook-square" style="font-size:48px;"></i>
+											<i class="fab fa-instagram-square" style="font-size:48px;"></i>
+											<div class="clearfix"> </div>
+										</ul>
+									</label>
+								</div>
+							</div><!--- end-team-member --->
+							<div class="clearfix"> </div>
+						</div>
+							<div class="clearfix"> </div>
+					<!--//team-members---->
+					</div>
+				</div>
+				<!----//team---->
+				<div class="clearfix"> </div>							
+			<!-----getintouch----->
+			<div id="contact" class="getintouch">
+				<div class="container">
+					<div class="section-head text-center">
+						<h3><span class="frist"> </span>GET IN TOUCH<span class="second"> </span></h3>
+						<p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+					</div>
+					<!---->
+					<div class="col-md-9 getintouch-left">
+						<div class="contact-form col-md-10">
+							<h3>Say hello!</h3>
+							<form name="contact" method="POST" data-netlify="true">
+								<input type="text" name="name" placeholder="Name" required />
+								<input type="text" name="email"  placeholder="Email" required />
+								<textarea name="message" placeholder="Message" required > </textarea>
+								<input type="submit" value="Send message" />						
+							</form>
+						</div>
+						<!-- <ul class="footer-social-icons col-md-2 text-center">
+							<li><a class="f-be" href="#"><span> </span></a></li>
+							<li><a class="f-tw" href="#"><span> </span></a></li>
+							<li><a class="f-db" href="#"><span> </span></a></li>
+							<li><a class="f-ti" href="#"><span> </span></a></li>
+							<li><a class="f-go" href="#"><span> </span></a></li>
+							<div class="clearfix"> </div>
+						</ul> -->
+					</div>
+					<div class="col-md-2 getintouch-left">
+						<div class="footer-divice">
+							<img src="images/divice-half.png" title="getintouch" />
+						</div>
+					</div>	
+				</div>
+			</div>
+			<!---//getintouch----->
+			<!-----footer----->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-grids">
+						<!-- <div class="col-md-3 footer-grid subscribe">
+							<h3>Subscribe </h3>
+							<form>
+								<input type="text" placeholder="" required />
+								<input type="submit" value="" />
+							</form>							
+						</div> -->
+						<div class="col-md-9 footer-grid copy-right">							
+							<h3>© 2020 EMERGENCY-AMBULANCE. ALL RIGHTS RESERVED | DESIGN BY SUBHENDU KUNDU</h3>							
+						</div>
+						<div class="clearfix"> </div>
+						<script type="text/javascript">
+							$(document).ready(function() {
+								/*
+								var defaults = {
+						  			containerID: 'toTop', // fading element id
+									containerHoverID: 'toTopHover', // fading element hover id
+									scrollSpeed: 1200,
+									easingType: 'linear' 
+						 		};
+								*/
+								
+								$().UItoTop({ easingType: 'easeOutQuart' });
+								
+							});
+						</script>
+							<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					</div>
+				</div>
+			</div>
+			<!---//footer----->
+			
+	</body>
+</html>
+
